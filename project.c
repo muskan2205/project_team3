@@ -399,3 +399,8 @@ void deleteAtEnd() {
         printf("List is empty.\n");
         return;
     }
+    void deleteAtEnd() {
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
