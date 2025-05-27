@@ -372,3 +372,6 @@ int main() {
     inputGraph();
     printAdjMatrix();
     for (int i = 0; i < MAX; i++)
+	      visited[i] = 0;
+    printf("Enter start vertex for DFS: ");
+    scanf("%d", &startVertex);
