@@ -394,3 +394,8 @@ void deleteAtBeginning() {
         head->prev = NULL;
     free(temp);
 }
+void deleteAtEnd() {
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
