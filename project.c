@@ -322,3 +322,7 @@ case 4:
                 reverseList();
                 printf("List reversed.\n");
                 break;
+		case 12:
+                printf("Exiting...\n");
+                exit(0);
+            default:
