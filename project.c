@@ -298,3 +298,6 @@ case 4:
                 scanf("%d", &data);
                 deleteByValue(data);
                 break;
+		case 5:
+                deleteAtBeginning();
+                break;
