@@ -443,4 +443,9 @@ void displayForward() {
     }
      printf("NULL\n");
 }
-
+void displayBackward() {
+    struct Node* temp = head;
+    if (temp == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
