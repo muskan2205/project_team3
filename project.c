@@ -409,3 +409,7 @@ void deleteAtEnd() {
         temp = temp->next;
     if (temp->prev != NULL)
         temp->prev->next = NULL;
+     else
+        head = NULL;
+    free(temp);
+}
