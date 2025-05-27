@@ -15,3 +15,5 @@ void search(int);
 void display();
 int countNodes();
 void reverseList();
+int main() {
+    int choice, data, position;
