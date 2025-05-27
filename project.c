@@ -182,4 +182,8 @@ prev->next = NULL;
 void search(int key) {
     struct Node* temp = head;
     int position = 1;
+    void search(int key) {
+    struct Node* temp = head;
+    int position = 1;
+
 
