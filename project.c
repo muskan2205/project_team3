@@ -217,5 +217,6 @@ int countNodes() {
     }
     return count;
 }
-
+void reverseList() {
+    struct Node *prev = NULL, *current = head, *next = NULL;
 
