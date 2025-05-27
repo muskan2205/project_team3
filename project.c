@@ -359,3 +359,9 @@ void insertAfter(int key, int data) {
     }
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = data;
+     newNode->next = temp->next;
+    newNode->prev = temp;
+    if (temp->next != NULL)
+        temp->next->prev = newNode;
+    temp->next = newNode;
+}
