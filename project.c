@@ -347,3 +347,9 @@ newNode->data = data;
     if (head == NULL) {
         newNode->prev = NULL;
         head = newNode;
+	 } else {
+        struct Node* temp = head;
+        while (temp->next != NULL) temp = temp->next;
+        temp->next = newNode;
+        newNode->prev = temp;
+    }
