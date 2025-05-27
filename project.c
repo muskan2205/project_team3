@@ -406,3 +406,10 @@ void deleteAtEnd() {
     free(temp);
     printf("Deleted node at end.\n");
 }
+void search(int data) {
+    struct Node* temp = head;
+    int pos = 1;
+    while (temp != NULL) {
+        if (temp->data == data) {
+            printf("Data %d found at position %d.\n", data, pos);
+            return;
