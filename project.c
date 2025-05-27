@@ -185,5 +185,9 @@ void search(int key) {
     void search(int key) {
     struct Node* temp = head;
     int position = 1;
-
+while (temp != NULL) {
+        if (temp->data == key) {
+            printf("Value %d found at position %d.\n", key, position);
+            return;
+        } 
 
