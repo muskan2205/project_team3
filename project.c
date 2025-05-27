@@ -136,3 +136,8 @@ if (temp != NULL && temp->data == value) {
         printf("Deleted node with value %d.\n", value);
         return;
     }
+while (temp != NULL && temp->data != value) {
+        prev = temp;
+        temp = temp->next;
+    }
+
