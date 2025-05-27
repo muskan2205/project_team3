@@ -332,3 +332,6 @@ DFS
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
+int adjMatrix[MAX][MAX];
+int visited[MAX];
+int numVertices;
