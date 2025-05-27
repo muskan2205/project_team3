@@ -66,3 +66,6 @@ int main() {
                 scanf("%d", &data);
                 search(data);
                 break;
+		case 8:
+                display();
+                break;
