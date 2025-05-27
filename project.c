@@ -260,3 +260,7 @@ int dequeue(struct Queue* q) {
     int item = q->items[q->front];
     if (q->front >= q->rear)
         q->front = q->rear = -1;
+    else
+        q->front++;
+    return item;
+}
