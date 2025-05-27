@@ -315,3 +315,6 @@ int main() {
     int startVertex;
     inputGraph();
     printAdjMatrix();
+    for (int i = 0; i < MAX; i++)
+        visited[i] = 0;
+
