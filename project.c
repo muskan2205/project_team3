@@ -239,3 +239,7 @@ struct Queue {
 };
 struct Queue* createQueue() {
     struct Queue* q = (struct Queue*)malloc(sizeof(struct Queue));
+     q->front = -1;
+    q->rear = -1;
+    return q;
+}
