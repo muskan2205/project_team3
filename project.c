@@ -412,4 +412,9 @@ void deleteAtEnd() {
      else
         head = NULL;
     free(temp);
-}
+
+
+   }
+    void search(int data) {
+    struct Node* temp = head;
+    int pos = 1;
