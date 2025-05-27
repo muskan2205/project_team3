@@ -228,3 +228,10 @@ void reverseList() {
     head = prev;
 }
 
+
+
+
+DOUBLY CIRCULAR LINKED LIST 
+#include <stdio.h>
+#include <stdlib.h>
+
