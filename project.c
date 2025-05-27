@@ -164,4 +164,9 @@ void deleteAtEnd() {
         printf("List is empty.\n");
         return;
     }
-
+if (head->next == NULL) {
+        free(head);
+        head = NULL;
+        printf("Deleted last node.\n");
+        return;
+    }
