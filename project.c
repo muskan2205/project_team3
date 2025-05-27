@@ -367,3 +367,5 @@ void printAdjMatrix() {
 	printf("\n");
     }
 }
+int main() {
+    int startVertex;
