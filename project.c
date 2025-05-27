@@ -413,4 +413,8 @@ void search(int data) {
         }
 	temp = temp->next;
         pos++;
+    
     }
+     printf("Data not found.\n");
+}
+
