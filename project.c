@@ -436,3 +436,9 @@ void displayBackward() {
         printf("List is empty.\n");
         return;
     }
+     while (temp->next != NULL) temp = temp->next;
+    printf("List (backward): ");
+    while (temp != NULL) {
+        printf("%d <-> ", temp->data);
+        temp = temp->prev;
+    }
