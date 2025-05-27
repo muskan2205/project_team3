@@ -93,3 +93,5 @@ void insertAtBeginning(int data) {
     head = newNode;
     printf("Inserted %d at the beginning.\n", data);
 }
+void insertAtEnd(int data) {
+
