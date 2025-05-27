@@ -252,4 +252,8 @@ void enqueue(struct Queue* q, int value) {
     if (q->front == -1)
         q->front = 0;
     q->items[++q->rear] = value;
+
 }
+int dequeue(struct Queue* q) {
+    if (isEmpty(q))
+        return -1;
