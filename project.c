@@ -289,3 +289,7 @@ void addEdge(int u, int v) {
 }
 void inputGraph() {
     int edges, u, v;
+     printf("Enter number of vertices: ");
+    scanf("%d", &numVertices);
+    printf("Enter number of edges: ");
+    scanf("%d", &edges);
