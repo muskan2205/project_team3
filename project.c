@@ -50,3 +50,8 @@ int main() {
                 scanf("%d", &data);
                 insertAfter(position, data);
                 break;
+		case 4:
+                printf("Enter value to delete: ");
+                scanf("%d", &data);
+                deleteByValue(data);
+                break;
