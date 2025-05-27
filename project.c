@@ -331,3 +331,5 @@ case 4:
     }
  return 0;
 }
+void insertAtBeginning(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
