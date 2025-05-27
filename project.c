@@ -340,4 +340,5 @@ void insertAtBeginning(int data) {
     head = newNode;
      printf("Inserted %d at beginning.\n", data);
 }
-
+void insertAtEnd(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
