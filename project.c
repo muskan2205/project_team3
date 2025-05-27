@@ -326,3 +326,7 @@ case 4:
                 printf("Exiting...\n");
                 exit(0);
             default:
+		 printf("Invalid choice\n");
+        }
+    }
+
