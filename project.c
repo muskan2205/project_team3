@@ -468,4 +468,6 @@ void reverseList() {
         current = current->prev;
     }
     if (temp != NULL) head = temp->prev;
+
 }
+
