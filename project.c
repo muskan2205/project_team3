@@ -280,3 +280,10 @@ switch (choice) {
                 scanf("%d", &data);
                 insertAtEnd(data);
                 break;
+		case 3:
+                printf("Enter existing node value: ");
+                scanf("%d", &key);
+                printf("Enter new data: ");
+                scanf("%d", &data);
+                insertAfter(key, data);
+                break;
