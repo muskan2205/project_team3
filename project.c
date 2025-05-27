@@ -238,4 +238,6 @@ void reverseList() {
 Doubly Linked List
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
