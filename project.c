@@ -369,3 +369,7 @@ void deleteByValue(int data) {
     struct Node* temp = head;
     while (temp != NULL && temp->data != data)
         temp = temp->next;
+    if (temp == NULL) {
+        printf("Node not found.\n");
+        return;
+    }
