@@ -120,4 +120,9 @@ if (temp == NULL) {
         printf("Node with value %d not found.\n", value);
         return;
     }
-
+struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = temp->next;
+    temp->next = newNode;
+    printf("Inserted %d after %d.\n", data, value);
+}
