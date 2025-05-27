@@ -254,3 +254,5 @@ void displayForward();
 void displayBackward();
 int countNodes();
 void reverseList();
+int main() {
+    int choice, data, pos;
