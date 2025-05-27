@@ -355,4 +355,10 @@ newNode->data = data;
     }
     printf("Inserted %d at end.\n", data);
 }
-
+void insertAfter(int posData, int data) {
+    struct Node* temp = head;
+    while (temp != NULL && temp->data != posData) temp = temp->next;
+    if (temp == NULL) {
+        printf("Node not found.\n");
+        return;
+    }
