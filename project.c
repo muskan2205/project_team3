@@ -382,3 +382,8 @@ void deleteByValue(int data) {
         temp->next->prev = temp->prev;
     free(temp);
 }
+void deleteAtBeginning() {
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
