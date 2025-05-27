@@ -276,3 +276,8 @@ int main() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
 switch (choice) {
+	 case 1:
+                printf("Enter data to insert: ");
+                scanf("%d", &data);
+                insertAtBeginning(data);
+                break;
