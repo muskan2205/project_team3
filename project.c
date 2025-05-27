@@ -407,3 +407,5 @@ void deleteAtEnd() {
     struct Node* temp = head;
     while (temp->next != NULL)
         temp = temp->next;
+    if (temp->prev != NULL)
+        temp->prev->next = NULL;
