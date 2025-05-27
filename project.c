@@ -417,4 +417,9 @@ void search(int data) {
     }
      printf("Data not found.\n");
 }
-
+void displayForward() {
+    struct Node* temp = head;
+    if (temp == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
