@@ -423,3 +423,10 @@ void displayForward() {
         printf("List is empty.\n");
         return;
     }
+    printf("List (forward): ");
+    while (temp != NULL) {
+        printf("%d <-> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+}
