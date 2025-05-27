@@ -293,3 +293,6 @@ void inputGraph() {
     scanf("%d", &numVertices);
     printf("Enter number of edges: ");
     scanf("%d", &edges);
+    for (int i = 0; i < numVertices; i++)
+        for (int j = 0; j < numVertices; j++)
+            adjMatrix[i][j] = 0;
