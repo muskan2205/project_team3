@@ -267,4 +267,7 @@ int dequeue(struct Queue* q) {
 int visited[MAX];
 int adjMatrix[MAX][MAX];
 int numVertices;
-
+void BFS(int startVertex) {
+    struct Queue* q = createQueue();
+    visited[startVertex] = 1;
+    enqueue(q, startVertex);
