@@ -303,3 +303,6 @@ switch (choice) {
                 scanf("%d", &data);
                 search(data);
                 break;
+		 case 8:
+                displayForward();
+                break;
