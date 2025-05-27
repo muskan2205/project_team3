@@ -335,3 +335,10 @@ void insertAtBeginning(int data) {
 }
 void insertAtEnd(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+     newNode->data = data;
+    newNode->next = NULL;
+    if (head == NULL) {
+        newNode->prev = NULL;
+        head = newNode;
+        return;
+    }
