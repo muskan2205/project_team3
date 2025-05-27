@@ -413,3 +413,9 @@ void search(int data) {
         if (temp->data == data) {
             printf("Data %d found at position %d.\n", data, pos);
             return;
+	      }
+        temp = temp->next;
+        pos++;
+    }
+    printf("Data not found.\n");
+}
