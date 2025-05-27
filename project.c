@@ -312,3 +312,6 @@ switch (choice) {
 		case 10:
                 printf("Total nodes: %d\n", countNodes());
                 break;
+		case 11:
+                reverseList();
+                break;
