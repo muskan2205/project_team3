@@ -224,4 +224,7 @@ void reverseList() {
         current->next = prev;
         prev = current;
         current = next;
+	}
+    head = prev;
+}
 
