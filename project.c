@@ -411,3 +411,6 @@ void search(int data) {
             printf("Data %d found at position %d.\n", data, pos);
             return;
         }
+	temp = temp->next;
+        pos++;
+    }
