@@ -283,3 +283,10 @@ int main() {
                 scanf("%d", &data);
                 insertAtEnd(data);
                 break;
+		case 3:
+                printf("Enter existing node value: ");
+                scanf("%d", &pos);
+                printf("Enter new data to insert: ");
+                scanf("%d", &data);
+                insertAfter(pos, data);
+                break;
