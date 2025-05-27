@@ -359,3 +359,12 @@ void insertAfter(int posData, int data) {
         printf("Node not found.\n");
         return;
     }
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = temp->next;
+    newNode->prev = temp;
+    if (temp->next != NULL) temp->next->prev = newNode;
+    temp->next = newNode;
+    printf("Inserted %d after %d.\n", data, posData);
+}
+
