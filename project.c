@@ -287,3 +287,8 @@ switch (choice) {
                 scanf("%d", &data);
                 insertAfter(key, data);
                 break;
+		 case 4:
+                printf("Enter data to delete: ");
+                scanf("%d", &data);
+                deleteByValue(data);
+                break;
