@@ -275,4 +275,4 @@ int main() {
         printf("12. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
+switch (choice) {
