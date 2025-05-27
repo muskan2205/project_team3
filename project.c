@@ -100,3 +100,10 @@ struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
  if (head == NULL) {
         head = newNode;
 	 } else {
+		 struct Node* temp = head;
+        while (temp->next != NULL)
+            temp = temp->next;
+        temp->next = newNode;
+    }
+    printf("Inserted %d at the end.\n", data);
+}
