@@ -246,4 +246,10 @@ struct Queue* createQueue() {
 int isEmpty(struct Queue* q) {
     return q->front == -1;
 }
-
+void enqueue(struct Queue* q, int value) {
+    if (q->rear == MAX - 1)
+        return;
+    if (q->front == -1)
+        q->front = 0;
+    q->items[++q->rear] = value;
+}
