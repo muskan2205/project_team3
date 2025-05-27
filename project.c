@@ -243,4 +243,14 @@ struct Node {
     struct Node* next;
 };
 struct Node* head = NULL;
-
+void insertAtBeginning(int data);
+void insertAtEnd(int data);
+void insertAfter(int posData, int data);
+void deleteByValue(int data);
+void deleteAtBeginning();
+void deleteAtEnd();
+void search(int data);
+void displayForward();
+void displayBackward();
+int countNodes();
+void reverseList();
