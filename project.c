@@ -243,3 +243,7 @@ struct Queue* createQueue() {
     q->rear = -1;
     return q;
 }
+int isEmpty(struct Queue* q) {
+    return q->front == -1;
+}
+
