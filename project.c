@@ -372,4 +372,8 @@ void deleteByValue(int data) {
     if (temp == NULL) {
         printf("Node not found.\n");
         return;
+    
     }
+     if (temp->prev != NULL)
+        temp->prev->next = temp->next;
+    else
