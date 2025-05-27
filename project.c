@@ -226,5 +226,14 @@ void reverseList() {
         current = next;
 	}
     head = prev;
+
 }
+
+
+
+
+
+
+
+Doubly Linked List
 
