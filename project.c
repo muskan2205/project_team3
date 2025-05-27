@@ -94,4 +94,7 @@ void insertAtBeginning(int data) {
     printf("Inserted %d at the beginning.\n", data);
 }
 void insertAtEnd(int data) {
+struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = NULL;
 
