@@ -338,3 +338,6 @@ void insertAtBeginning(int data) {
     newNode->next = head;
     if (head != NULL) head->prev = newNode;
     head = newNode;
+     printf("Inserted %d at beginning.\n", data);
+}
+
