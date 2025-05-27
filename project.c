@@ -195,5 +195,11 @@ while (temp != NULL) {
     }
 printf("Value %d not found in the list.\n", key);
 }
-
+void display() {
+    struct Node* temp = head;
+    if (temp == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
+    
 
