@@ -283,4 +283,8 @@ void BFS(int startVertex) {
     }
     free(q);
 }
+void addEdge(int u, int v) {
+    adjMatrix[u][v] = 1;
+    adjMatrix[v][u] = 1;
+}
 
