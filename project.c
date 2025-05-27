@@ -87,3 +87,9 @@ int main() {
 }
 
 void insertAtBeginning(int data) {
+	struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = head;
+    head = newNode;
+    printf("Inserted %d at the beginning.\n", data);
+}
