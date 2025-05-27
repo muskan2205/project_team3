@@ -79,3 +79,10 @@ int main() {
 		 case 11:
                 printf("Exiting...\n");
                 exit(0);
+		default:
+                printf("Invalid choice!\n");
+        }
+    }
+    return 0;
+}
+
