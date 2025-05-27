@@ -128,3 +128,6 @@ struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
 }
 void deleteByValue(int value) {
     struct Node *temp = head, *prev = NULL;
+
+project.c
+
