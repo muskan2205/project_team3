@@ -43,3 +43,10 @@ int main() {
                 scanf("%d", &data);
                 insertAtEnd(data);
                 break;
+		case 3:
+                printf("Enter node value to insert after: ");
+                scanf("%d", &position);
+                printf("Enter data to insert: ");
+                scanf("%d", &data);
+                insertAfter(position, data);
+                break;
