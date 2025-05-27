@@ -335,3 +335,11 @@ DFS
 int adjMatrix[MAX][MAX];
 int visited[MAX];
 int numVertices;
+void DFS(int vertex) {
+    visited[vertex] = 1;
+    printf("%d ", vertex);
+    for (int i = 0; i < numVertices; i++) {
+        if (adjMatrix[vertex][i] == 1 && !visited[i])
+            DFS(i);
+    }
+}
