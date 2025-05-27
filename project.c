@@ -140,4 +140,8 @@ while (temp != NULL && temp->data != value) {
         prev = temp;
         temp = temp->next;
     }
+if (temp == NULL) {
+        printf("Value %d not found.\n", value);
+        return;
+    }
 
