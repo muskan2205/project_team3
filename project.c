@@ -319,3 +319,6 @@ int main() {
         visited[i] = 0;
  printf("Enter start vertex for BFS: ");
     scanf("%d", &startVertex);
+    printf("BFS traversal starting from vertex %d: ", startVertex);
+    BFS(startVertex);
+    printf("\n");
