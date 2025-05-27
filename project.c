@@ -375,3 +375,8 @@ int main() {
 	      visited[i] = 0;
     printf("Enter start vertex for DFS: ");
     scanf("%d", &startVertex);
+    printf("DFS traversal starting from vertex %d: ", startVertex);
+    DFS(startVertex);
+    printf("\n");
+    return 0;
+}
