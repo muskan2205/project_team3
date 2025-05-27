@@ -442,3 +442,6 @@ void displayBackward() {
         printf("%d <-> ", temp->data);
         temp = temp->prev;
     }
+    printf("NULL\n");
+}
+
