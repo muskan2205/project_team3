@@ -240,3 +240,14 @@ struct Node {
     struct Node* next;
 };
 struct Node* head = NULL;
+void insertAtBeginning(int data);
+void insertAtEnd(int data);
+void insertAfter(int key, int data);
+void deleteByValue(int data);
+void deleteAtBeginning();
+void deleteAtEnd();
+void search(int data);
+void displayForward();
+void displayBackward();
+void reverseList();
+int countNodes();
