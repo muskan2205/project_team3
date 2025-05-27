@@ -355,3 +355,8 @@ void inputGraph() {
     for (int i = 0; i < edges; i++) {
         printf("Enter edge %d (u v): ", i + 1);
         scanf("%d %d", &u, &v);
+	  adjMatrix[u][v] = 1;
+        adjMatrix[v][u] = 1;
+    }
+}
+
