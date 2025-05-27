@@ -72,3 +72,7 @@ int main() {
 		case 9:
                 printf("Total nodes = %d\n", countNodes());
                 break;
+		 case 10:
+                reverseList();
+                printf("List reversed successfully.\n");
+                break;
