@@ -193,5 +193,7 @@ while (temp != NULL) {
 	temp = temp->next;
         position++;
     }
+printf("Value %d not found in the list.\n", key);
+}
 
 
