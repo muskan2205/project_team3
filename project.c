@@ -271,3 +271,6 @@ void BFS(int startVertex) {
     struct Queue* q = createQueue();
     visited[startVertex] = 1;
     enqueue(q, startVertex);
+    while (!isEmpty(q)) {
+        int currentVertex = dequeue(q);
+        printf("%d ", currentVertex);
