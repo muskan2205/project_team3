@@ -298,3 +298,8 @@ switch (choice) {
 		case 6:
                 deleteAtEnd();
                 break;
+		case 7:
+                printf("Enter value to search: ");
+                scanf("%d", &data);
+                search(data);
+                break;
