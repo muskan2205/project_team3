@@ -430,4 +430,9 @@ void deleteAtEnd() {
     }
     printf("Data %d not found.\n", data);
 }
-
+void displayForward() {
+    struct Node* temp = head;
+    if (temp == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
