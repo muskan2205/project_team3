@@ -264,3 +264,7 @@ int dequeue(struct Queue* q) {
         q->front++;
     return item;
 }
+int visited[MAX];
+int adjMatrix[MAX][MAX];
+int numVertices;
+
