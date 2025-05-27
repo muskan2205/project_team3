@@ -453,3 +453,7 @@ void displayBackward() {
     while (temp->next != NULL)
         temp = temp->next;
     printf("List (Backward): ");
+    while (temp != NULL) {
+        printf("%d <-> ", temp->data);
+        temp = temp->prev;
+    }
