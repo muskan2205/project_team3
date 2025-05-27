@@ -69,3 +69,6 @@ int main() {
 		case 8:
                 display();
                 break;
+		case 9:
+                printf("Total nodes = %d\n", countNodes());
+                break;
