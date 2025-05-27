@@ -86,3 +86,4 @@ int main() {
     return 0;
 }
 
+void insertAtBeginning(int data) {
