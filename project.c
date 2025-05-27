@@ -347,4 +347,9 @@ void insertAtEnd(int data) {
         temp = temp->next;
     temp->next = newNode;
     newNode->prev = temp;
+
 }
+void insertAfter(int key, int data) {
+    struct Node* temp = head;
+    while (temp != NULL && temp->data != key)
+        temp = temp->next;
