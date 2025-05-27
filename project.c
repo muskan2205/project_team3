@@ -333,3 +333,5 @@ void insertAtBeginning(int data) {
         head->prev = newNode;
     head = newNode;
 }
+void insertAtEnd(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
