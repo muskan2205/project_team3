@@ -426,4 +426,8 @@ void deleteAtEnd() {
 	}
 	 temp = temp->next;
         pos++;
+    
     }
+    printf("Data %d not found.\n", data);
+}
+
