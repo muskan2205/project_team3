@@ -333,3 +333,8 @@ case 4:
 }
 void insertAtBeginning(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->prev = NULL;
+    newNode->next = head;
+    if (head != NULL) head->prev = newNode;
+    head = newNode;
