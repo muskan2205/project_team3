@@ -106,4 +106,10 @@ struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
         temp->next = newNode;
     }
     printf("Inserted %d at the end.\n", data);
+
 }
+void insertAfter(int value, int data) {
+    struct Node* temp = head;
+    while (temp != NULL && temp->data != value)
+        temp = temp->next;
+
