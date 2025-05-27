@@ -302,4 +302,5 @@ void inputGraph() {
         addEdge(u, v);
     }
 }
-
+void printAdjMatrix() {
+    printf("Adjacency Matrix:\n");
