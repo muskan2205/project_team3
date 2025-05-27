@@ -232,4 +232,8 @@ BFS
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
-
+struct Queue {
+    int items[MAX];
+    int front;
+    int rear;
+};
