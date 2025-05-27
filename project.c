@@ -144,4 +144,8 @@ if (temp == NULL) {
         printf("Value %d not found.\n", value);
         return;
     }
+ prev->next = temp->next;
+    free(temp);
+    printf("Deleted node with value %d.\n", value);
+}
 
