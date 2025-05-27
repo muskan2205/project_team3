@@ -386,4 +386,11 @@ void deleteAtBeginning() {
     if (head == NULL) {
         printf("List is empty.\n");
         return;
+    
     }
+    struct Node* temp = head;
+    head = head->next;
+    if (head != NULL)
+        head->prev = NULL;
+    free(temp);
+}
