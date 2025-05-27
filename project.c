@@ -367,4 +367,10 @@ void insertAfter(int posData, int data) {
     temp->next = newNode;
     printf("Inserted %d after %d.\n", data, posData);
 }
-
+void deleteByValue(int data) {
+    struct Node* temp = head;
+    while (temp != NULL && temp->data != data) temp = temp->next;
+    if (temp == NULL) {
+        printf("Node not found.\n");
+        return;
+    }
