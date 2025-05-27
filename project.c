@@ -304,3 +304,8 @@ case 4:
 		 case 6:
                 deleteAtEnd();
                 break;
+		case 7:
+                printf("Enter data to search: ");
+                scanf("%d", &data);
+                search(data);
+                break;
