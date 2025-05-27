@@ -274,3 +274,10 @@ void BFS(int startVertex) {
     while (!isEmpty(q)) {
         int currentVertex = dequeue(q);
         printf("%d ", currentVertex);
+	for (int i = 0; i < numVertices; i++) {
+            if (adjMatrix[currentVertex][i] == 1 && !visited[i]) {
+                visited[i] = 1;
+                enqueue(q, i);
+            }
+        }
+    }
