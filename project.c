@@ -296,3 +296,10 @@ void inputGraph() {
     for (int i = 0; i < numVertices; i++)
         for (int j = 0; j < numVertices; j++)
             adjMatrix[i][j] = 0;
+    for (int i = 0; i < edges; i++) {
+        printf("Enter edge %d (u v): ", i + 1);
+        scanf("%d %d", &u, &v);
+        addEdge(u, v);
+    }
+}
+
