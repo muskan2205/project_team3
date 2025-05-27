@@ -99,3 +99,4 @@ struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
     newNode->next = NULL;
  if (head == NULL) {
         head = newNode;
+	 } else {
