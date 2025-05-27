@@ -313,3 +313,5 @@ case 4:
                 displayForward();
                 break;
             case 9:
+		displayBackward();
+                break;
