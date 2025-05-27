@@ -448,4 +448,8 @@ void displayBackward() {
     if (temp == NULL) {
         printf("List is empty.\n");
         return;
+    
     }
+    while (temp->next != NULL)
+        temp = temp->next;
+    printf("List (Backward): ");
