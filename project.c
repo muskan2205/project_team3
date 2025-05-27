@@ -306,3 +306,6 @@ switch (choice) {
 		 case 8:
                 displayForward();
                 break;
+		case 9:
+                displayBackward();
+                break;
