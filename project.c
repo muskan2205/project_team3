@@ -399,3 +399,10 @@ void deleteAtEnd() {
         printf("List is empty.\n");
         return;
     }
+     struct Node* temp = head;
+    while (temp->next != NULL) temp = temp->next;
+    if (temp->prev != NULL) temp->prev->next = NULL;
+    else head = NULL;
+    free(temp);
+    printf("Deleted node at end.\n");
+}
