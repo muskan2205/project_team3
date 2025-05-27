@@ -353,3 +353,6 @@ newNode->data = data;
         temp->next = newNode;
         newNode->prev = temp;
     }
+    printf("Inserted %d at end.\n", data);
+}
+
