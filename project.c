@@ -380,4 +380,8 @@ void deleteByValue(int data) {
     free(temp);
     printf("Deleted node with data %d.\n", data);
 }
-
+void deleteAtBeginning() {
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
