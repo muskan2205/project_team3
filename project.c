@@ -322,3 +322,12 @@ int main() {
     printf("BFS traversal starting from vertex %d: ", startVertex);
     BFS(startVertex);
     printf("\n");
+    return 0;
+}
+
+
+
+
+DFS
+#include <stdio.h>
+#include <stdlib.h>
