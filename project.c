@@ -189,5 +189,9 @@ while (temp != NULL) {
         if (temp->data == key) {
             printf("Value %d found at position %d.\n", key, position);
             return;
-        } 
+        }
+	temp = temp->next;
+        position++;
+    }
+
 
