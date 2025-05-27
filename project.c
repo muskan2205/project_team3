@@ -315,3 +315,12 @@ switch (choice) {
 		case 11:
                 reverseList();
                 break;
+		 case 12:
+                printf("Exiting...\n");
+                exit(0);
+            default:
+                printf("Invalid choice.\n");
+        }
+    }
+    return 0;
+}
