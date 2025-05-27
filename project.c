@@ -380,3 +380,12 @@ int main() {
     printf("\n");
     return 0;
 }
+
+Enter number of vertices: 4
+Enter number of edges: 4
+Enter edge 1 (u v): 0 1
+Enter edge 2 (u v): 0 2
+Enter edge 3 (u v): 1 3
+Enter edge 4 (u v): 2 3
+Enter start vertex for DFS: 0
+
