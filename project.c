@@ -201,5 +201,12 @@ void display() {
         printf("List is empty.\n");
         return;
     }
-    
+   printf("Linked List: ");
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+}
+ 
 
