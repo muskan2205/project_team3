@@ -126,3 +126,5 @@ struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
     temp->next = newNode;
     printf("Inserted %d after %d.\n", data, value);
 }
+void deleteByValue(int value) {
+    struct Node *temp = head, *prev = NULL;
