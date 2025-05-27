@@ -130,4 +130,9 @@ void deleteByValue(int value) {
     struct Node *temp = head, *prev = NULL;
 
 project.c
-
+if (temp != NULL && temp->data == value) {
+        head = temp->next;
+        free(temp);
+        printf("Deleted node with value %d.\n", value);
+        return;
+    }
