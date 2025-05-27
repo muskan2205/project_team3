@@ -312,3 +312,7 @@ int main() {
 		case 9:
                 displayBackward();
                 break;
+		case 10:
+                printf("Total nodes: %d\n", countNodes());
+                break;
+            case 11:
