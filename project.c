@@ -343,3 +343,5 @@ void DFS(int vertex) {
             DFS(i);
     }
 }
+void inputGraph() {
+    int edges, u, v;
