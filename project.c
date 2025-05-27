@@ -353,3 +353,7 @@ void insertAfter(int key, int data) {
     struct Node* temp = head;
     while (temp != NULL && temp->data != key)
         temp = temp->next;
+    if (temp == NULL) {
+        printf("Node with value %d not found.\n", key);
+        return;
+    }
