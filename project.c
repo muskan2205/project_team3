@@ -179,4 +179,7 @@ prev->next = NULL;
     free(temp);
     printf("Deleted last node.\n");
 }
+void search(int key) {
+    struct Node* temp = head;
+    int position = 1;
 
