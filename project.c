@@ -153,3 +153,10 @@ void deleteAtBeginning() {
         printf("List is empty.\n");
         return;
     }
+    struct Node* temp = head;
+    head = head->next;
+    free(temp);
+    printf("Deleted node at beginning.\n");
+}
+
+
