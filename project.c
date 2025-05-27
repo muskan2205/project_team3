@@ -365,3 +365,7 @@ void insertAfter(int key, int data) {
         temp->next->prev = newNode;
     temp->next = newNode;
 }
+void deleteByValue(int data) {
+    struct Node* temp = head;
+    while (temp != NULL && temp->data != data)
+        temp = temp->next;
