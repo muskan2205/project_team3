@@ -175,4 +175,8 @@ if (head->next == NULL) {
         prev = temp;
         temp = temp->next;
     }
+prev->next = NULL;
+    free(temp);
+    printf("Deleted last node.\n");
+}
 
