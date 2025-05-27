@@ -170,3 +170,9 @@ if (head->next == NULL) {
         printf("Deleted last node.\n");
         return;
     }
+ struct Node *temp = head, *prev = NULL;
+    while (temp->next != NULL) {
+        prev = temp;
+        temp = temp->next;
+    }
+
