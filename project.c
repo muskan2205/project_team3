@@ -357,3 +357,5 @@ void insertAfter(int key, int data) {
         printf("Node with value %d not found.\n", key);
         return;
     }
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
