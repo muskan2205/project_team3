@@ -301,3 +301,6 @@ case 4:
 		case 5:
                 deleteAtBeginning();
                 break;
+		 case 6:
+                deleteAtEnd();
+                break;
