@@ -76,3 +76,6 @@ int main() {
                 reverseList();
                 printf("List reversed successfully.\n");
                 break;
+		 case 11:
+                printf("Exiting...\n");
+                exit(0);
