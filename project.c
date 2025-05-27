@@ -316,3 +316,6 @@ int main() {
                 printf("Total nodes: %d\n", countNodes());
                 break;
             case 11:
+		  reverseList();
+                printf("List reversed.\n");
+                break;
