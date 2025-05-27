@@ -317,4 +317,5 @@ int main() {
     printAdjMatrix();
     for (int i = 0; i < MAX; i++)
         visited[i] = 0;
-
+ printf("Enter start vertex for BFS: ");
+    scanf("%d", &startVertex);
