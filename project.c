@@ -159,4 +159,9 @@ void deleteAtBeginning() {
     printf("Deleted node at beginning.\n");
 }
 
+void deleteAtEnd() {
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
 
