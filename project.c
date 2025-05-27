@@ -290,3 +290,8 @@ int main() {
                 scanf("%d", &data);
                 insertAfter(pos, data);
                 break;
+		 case 4:
+                printf("Enter data to delete: ");
+                scanf("%d", &data);
+                deleteByValue(data);
+                break;
