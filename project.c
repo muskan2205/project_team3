@@ -389,3 +389,11 @@ Enter edge 3 (u v): 1 3
 Enter edge 4 (u v): 2 3
 Enter start vertex for DFS: 0
 
+
+		    Adjacency Matrix:
+0 1 1 0
+1 0 0 1
+1 0 0 1
+0 1 1 0
+DFS traversal starting from vertex 0: 0 1 3 2
+
