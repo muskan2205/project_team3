@@ -235,9 +235,21 @@ void reverseList() {
 
 
 
+
+
+
+
+
+
+
+
+
 Doubly Linked List
 #include <stdio.h>
 #include <stdlib.h>
+
+CIRCULAR LINKED LIST
+>>>>>>> B2
 #include <stdio.h>
 #include <stdlib.h>
 struct Node {
@@ -259,7 +271,11 @@ int countNodes();
 void reverseList();
 int main() {
     int choice, data, pos;
+
      while (1) {
+
+    while (1) {
+
         printf("\n\n--- Doubly Linked List Menu ---\n");
         printf("1. Insert at Beginning\n");
         printf("2. Insert at End\n");
@@ -275,8 +291,12 @@ int main() {
         printf("12. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
+
 switch (choice) {
 	 case 1:
+
+	switch (choice) {
+            case 1
                 printf("Enter data to insert: ");
                 scanf("%d", &data);
                 insertAtBeginning(data);
@@ -293,7 +313,10 @@ switch (choice) {
                 scanf("%d", &data);
                 insertAfter(pos, data);
                 break;
+
 case 4:
+
+		 case 4
                 printf("Enter data to delete: ");
                 scanf("%d", &data);
                 deleteByValue(data);
@@ -301,7 +324,10 @@ case 4:
 		case 5:
                 deleteAtBeginning();
                 break;
-		 case 6:
+
+		 case
+		case 6:
+
                 deleteAtEnd();
                 break;
 		case 7:
@@ -314,22 +340,38 @@ case 4:
                 break;
             case 9:
 		displayBackward();
+		case 8:
+                displayForward();
+                break;
+		case 9:
+                displayBackward();
+
                 break;
 		case 10:
                 printf("Total nodes: %d\n", countNodes());
                 break;
 		case 11:
                 reverseList();
+            case 11:
+		  reverseList();
+
                 printf("List reversed.\n");
                 break;
 		case 12:
                 printf("Exiting...\n");
                 exit(0);
             default:
+
 		 printf("Invalid choice\n");
         }
     }
  return 0;
+
+                printf("Invalid choice\n");
+        }
+    }
+    return 0;
+
 }
 void insertAtBeginning(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
@@ -338,11 +380,18 @@ void insertAtBeginning(int data) {
     newNode->next = head;
     if (head != NULL) head->prev = newNode;
     head = newNode;
+
      printf("Inserted %d at beginning.\n", data);
 }
 void insertAtEnd(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
 newNode->data = data;
+    printf("Inserted %d at beginning.\n", data);
+}
+void insertAtEnd(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+
     newNode->next = NULL;
     if (head == NULL) {
         newNode->prev = NULL;
@@ -362,7 +411,11 @@ void insertAfter(int posData, int data) {
         printf("Node not found.\n");
         return;
     }
+
      struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+
     newNode->data = data;
     newNode->next = temp->next;
     newNode->prev = temp;
@@ -376,7 +429,11 @@ void deleteByValue(int data) {
     if (temp == NULL) {
         printf("Node not found.\n");
         return;
+
 	 }
+
+    }
+
     if (temp->prev != NULL) temp->prev->next = temp->next;
     else head = temp->next;
     if (temp->next != NULL) temp->next->prev = temp->prev;
@@ -387,7 +444,11 @@ void deleteAtBeginning() {
     if (head == NULL) {
         printf("List is empty.\n");
         return;
+
 	 }
+
+    }
+
     struct Node* temp = head;
     head = head->next;
     if (head != NULL) head->prev = NULL;
@@ -399,7 +460,11 @@ void deleteAtEnd() {
         printf("List is empty.\n");
         return;
     }
+
      struct Node* temp = head;
+
+    struct Node* temp = head;
+
     while (temp->next != NULL) temp = temp->next;
     if (temp->prev != NULL) temp->prev->next = NULL;
     else head = NULL;
@@ -413,19 +478,32 @@ void search(int data) {
         if (temp->data == data) {
             printf("Data %d found at position %d.\n", data, pos);
             return;
+
 	      }
         temp = temp->next;
         pos++;
     }
     printf("Data not found.\n");
+
+        }
+	temp = temp->next;
+        pos++;
+    
+    }
+     printf("Data not found.\n");
+
 }
 void displayForward() {
     struct Node* temp = head;
     if (temp == NULL) {
         printf("List is empty.\n");
         return;
+
     
    }
+
+    }
+
     printf("List (forward): ");
     while (temp != NULL) {
         printf("%d <-> ", temp->data);
@@ -439,13 +517,19 @@ void displayBackward() {
         printf("List is empty.\n");
         return;
     }
+
     while (temp->next != NULL) temp = temp->next;
+
+     while (temp->next != NULL) temp = temp->next;
+
     printf("List (backward): ");
     while (temp != NULL) {
         printf("%d <-> ", temp->data);
         temp = temp->prev;
     }
     printf("NULL\n");
+
+
 
 
 }
@@ -468,6 +552,7 @@ void reverseList() {
         current = current->prev;
     }
     if (temp != NULL) head = temp->prev;
+
 
 }
 
@@ -639,4 +724,266 @@ Enter start vertex for DFS: 0
 1 0 0 1
 0 1 1 0
 DFS traversal starting from vertex 0: 0 1 3 2
+
+
+
+    #include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+struct Node* head = NULL;
+
+void insertAtBeginning(int data);
+void insertAtEnd(int data);
+void insertAfter(int key, int data);
+void deleteByValue(int data);
+void deleteAtBeginning();
+void deleteAtEnd();
+void search(int key);
+void display();
+int countNodes();
+void reverse();
+
+int main() {
+    int choice, data, key;
+
+    while (1) {
+        printf("\n\n--- Circular Linked List Menu ---\n");
+        printf("1. Insert at Beginning\n");
+        printf("2. Insert at End\n");
+        printf("3. Insert After a Node\n");
+        printf("4. Delete by Value\n");
+        printf("5. Delete at Beginning\n");
+        printf("6. Delete at End\n");
+        printf("7. Search for Element\n");
+        printf("8. Display List\n");
+        printf("9. Count Nodes\n");
+        printf("10. Reverse List\n");
+        printf("11. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter data to insert: ");
+                scanf("%d", &data);
+                insertAtBeginning(data);
+                break;
+            case 2:
+                printf("Enter data to insert: ");
+                scanf("%d", &data);
+                insertAtEnd(data);
+                break;
+            case 3:
+                printf("Enter node value to insert after: ");
+                scanf("%d", &key);
+                printf("Enter data to insert: ");
+                scanf("%d", &data);
+                insertAfter(key, data);
+                break;
+            case 4:
+                printf("Enter value to delete: ");
+                scanf("%d", &data);
+                deleteByValue(data);
+                break;
+            case 5:
+                deleteAtBeginning();
+                break;
+            case 6:
+                deleteAtEnd();
+                break;
+            case 7:
+                printf("Enter value to search: ");
+                scanf("%d", &data);
+                search(data);
+                break;
+            case 8:
+                display();
+                break;
+            case 9:
+                printf("Total nodes = %d\n", countNodes());
+                break;
+            case 10:
+                reverse();
+                printf("List reversed.\n");
+                break;
+            case 11:
+                printf("Exiting...\n");
+                exit(0);
+            default:
+                printf("Invalid choice\n");
+        }
+    }
+    return 0;
+}
+
+void insertAtBeginning(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    if (head == NULL) {
+        newNode->next = newNode;
+        head = newNode;
+        return;
+    }
+    struct Node* temp = head;
+    while (temp->next != head) temp = temp->next;
+    newNode->next = head;
+    temp->next = newNode;
+    head = newNode;
+}
+
+void insertAtEnd(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    if (head == NULL) {
+        newNode->next = newNode;
+        head = newNode;
+        return;
+    }
+    struct Node* temp = head;
+    while (temp->next != head) temp = temp->next;
+    temp->next = newNode;
+    newNode->next = head;
+}
+
+void insertAfter(int key, int data) {
+    struct Node* temp = head;
+    if (temp == NULL) return;
+    do {
+        if (temp->data == key) {
+            struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+            newNode->data = data;
+            newNode->next = temp->next;
+            temp->next = newNode;
+            return;
+        }
+        temp = temp->next;
+    } while (temp != head);
+    printf("Node with value %d not found.\n", key);
+}
+
+void deleteByValue(int data) {
+    if (head == NULL) return;
+    struct Node *temp = head, *prev = NULL;
+    if (head->data == data && head->next == head) {
+        free(head);
+        head = NULL;
+        return;
+    }
+    if (head->data == data) {
+        while (temp->next != head) temp = temp->next;
+        struct Node* del = head;
+        temp->next = head->next;
+        head = head->next;
+        free(del);
+        return;
+    }
+    prev = head;
+    temp = head->next;
+    while (temp != head) {
+        if (temp->data == data) {
+            prev->next = temp->next;
+            free(temp);
+            return;
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+    printf("Node with value %d not found.\n", data);
+}
+
+void deleteAtBeginning() {
+    if (head == NULL) return;
+    struct Node* temp = head;
+    if (head->next == head) {
+        free(head);
+        head = NULL;
+        return;
+    }
+    while (temp->next != head) temp = temp->next;
+    struct Node* del = head;
+    temp->next = head->next;
+    head = head->next;
+    free(del);
+}
+
+void deleteAtEnd() {
+    if (head == NULL) return;
+    struct Node *temp = head, *prev = NULL;
+    if (head->next == head) {
+        free(head);
+        head = NULL;
+        return;
+    }
+    while (temp->next != head) {
+        prev = temp;
+        temp = temp->next;
+    }
+    prev->next = head;
+    free(temp);
+}
+
+void search(int key) {
+    struct Node* temp = head;
+    int pos = 1;
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
+    do {
+        if (temp->data == key) {
+            printf("Found %d at position %d.\n", key, pos);
+            return;
+        }
+        temp = temp->next;
+        pos++;
+    } while (temp != head);
+    printf("Value %d not found.\n", key);
+}
+
+void display() {
+    struct Node* temp = head;
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
+    printf("List: ");
+    do {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    } while (temp != head);
+    printf("(back to head)\n");
+}
+
+int countNodes() {
+    int count = 0;
+    struct Node* temp = head;
+    if (head == NULL) return 0;
+    do {
+        count++;
+        temp = temp->next;
+    } while (temp != head);
+    return count;
+}
+
+void reverse() {
+    if (head == NULL || head->next == head) return;
+    struct Node *prev = NULL, *current = head, *next = NULL, *last = head;
+    do {
+        last = last->next;
+    } while (last->next != head);
+    struct Node* stop = head;
+    do {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    } while (current != stop);
+    head->next = prev;
+    head = prev;
+}
 
